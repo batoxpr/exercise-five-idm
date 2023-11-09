@@ -9,11 +9,11 @@ router.get("/:postId", (req, res) => {
 
     postsQuery
        .then((response) => {
-        res.send(response.data());
+            res.send(response.data());
         })
        .catch((error) => {
-        console.log(error);
-        return res.send(error);
+            console.log(error);
+            return res.send(error);
        });
     });
 
